@@ -33,6 +33,7 @@ public class EjemploBolsaSupermercado {
         bolsaNoPerecibles.addProductos(new NoPerecible("Sal", 33.8, 1, 1790));
         bolsaNoPerecibles.addProductos(new NoPerecible("Pimienta", 89.4, 2, 490));
         bolsaNoPerecibles.addProductos(new NoPerecible("Clavo", 15.8, 1, 480));
+        //bolsaNoPerecibles.addProductos(new NoPerecible("Clavo", 15.8, 1, 480));
 
         System.out.println("====== Frutas ======");
         for (Fruta fruta : bolsaFrutas.getBolsaSuper()) {

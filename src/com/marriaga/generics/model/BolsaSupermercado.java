@@ -9,7 +9,7 @@ public class BolsaSupermercado<T> {
     private int maxProductos = 5;
 
     public BolsaSupermercado() {
-        this.bolsaSuper = new ArrayList<>(maxProductos);
+        this.bolsaSuper = new ArrayList<>();
     }
 
     public List<T> getBolsaSuper() {
@@ -17,9 +17,9 @@ public class BolsaSupermercado<T> {
     }
 
     public void addProductos(T objeto) {
-        if (bolsaSuper.size()<=maxProductos){
+        if (bolsaSuper.size() < maxProductos) {
             bolsaSuper.add(objeto);
-        }else {
+        } else {
             throw new RuntimeException("No hay más espacio");
         }
     }
